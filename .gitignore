@@ -31,4 +31,4 @@
 /config/master.key
 /node_modules
 
-/Gimfile
+/Gemfile
