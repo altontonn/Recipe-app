@@ -2,7 +2,7 @@ class FoodsController < ApplicationController
   before_action :set_food, only: %i[show destroy]
   def index
     @foods = current_user.foods
-   end
+  end
 
   def show
     @food
