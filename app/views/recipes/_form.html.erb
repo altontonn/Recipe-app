@@ -22,8 +22,11 @@
   </div>
   
   <div class="field">
-    <%= form.label "Pubic", style: "display: block" %>
-    <%= form.text_field :Public, required: true %>
+    <%= form.label :Public %><br />
+    <%= form.label :Public, "True", :value => "True"  %>
+    <%= form.radio_button :Public, true%>
+    <%= form.label :Public, "False", :value => "False" %>
+    <%= form.radio_button :Public, false, :checked => true %>
   </div>
 
   <%= form.submit "Create Recipe", class: "button"%>
