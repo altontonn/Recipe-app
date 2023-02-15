@@ -14,21 +14,21 @@
  *= require_self
  */
 
- * {
+* {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; 
- }
+  box-sizing: border-box;
+}
 
- body {
-    background-image: url(nice-restaurant-background-illustrated_52683-60539.avif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    min-height: 100vh;
- }
+body {
+  background-image: url(nice-restaurant-background-illustrated_52683-60539.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  min-height: 100vh;
+}
 
- .notice {
+.notice {
   align-items: center;
   display: flex;
   flex-direction: column;
