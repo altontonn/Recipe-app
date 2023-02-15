@@ -1,6 +1,6 @@
 class Food < ApplicationRecord
   belongs_to :user
-  has_many :recipe_foods
+  has_many :recipe_foods, foreign_key: :food_id
 
   validates :name, presence: true
   validates :measurement_unit, presence: true, format: { with: /\A[a-zA-Z]+\z/, message: 'only allows letters' }

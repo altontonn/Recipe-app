@@ -1,0 +1,52 @@
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+  font-family: cursive;
+}
+
+td,
+th {
+  border: 1px solid #000;
+  text-align: left;
+  padding: 8px;
+}
+
+td {
+  padding: 2rem;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+section h1 {
+  text-align: center;
+}
+
+.button {
+  border: none;
+  background-color: #0099ff;
+  padding: 10px 12px;
+  border-radius: 16px;
+}
+
+.button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+}
+.delete {
+  color: #fff;
+  background-color: #DC3545;
+  padding: 10px 12px;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+.delete:hover {
+  color: white;
+}

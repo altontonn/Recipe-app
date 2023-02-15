@@ -1,2 +1,30 @@
-<h1>Recipes#index</h1>
-<p>Find me in app/views/recipes/index.html.erb</p>
+<section class='recipe'>
+  <h1>Recipes List</h1>
+  <div class="container">
+    <button class="button"><%= link_to "Add Recipe", new_recipe_path%></button>
+  </div>
+  <% if @recipes.count > 0%>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Preparation_time</th>
+        <th>Cooking_time</th>
+        <th>Description</th>
+        <th>Public</th>
+      </tr>
+      <% @recipes.each do |recipe| %>
+      <tr>
+        <td><%= recipe.Name %></td>
+        <td><%= recipe.Preparation_time %></td>
+        <td><%= recipe.Cooking_time %></td>
+        <td><%= recipe.Description %></td>
+        <td><%= recipe.Public %></td>
+        <td><%= link_to "Delete", recipe_path(recipe), class: "delete",data: { turbo_method: :delete, turbo_confirm: "Are you  sure?"}%>
+        </td>
+      </tr>
+      <% end %>
+    <%else%>
+    <h2>No recipe</h2>
+  <%end%>
+  </div>
+</section>
