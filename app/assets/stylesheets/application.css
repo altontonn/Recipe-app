@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+
+ * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+ }
+
+ body {
+    background-image: url(nice-restaurant-background-illustrated_52683-60539.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    min-height: 100vh;
+ }
+
+ .notice {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
