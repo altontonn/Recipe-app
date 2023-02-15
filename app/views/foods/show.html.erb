@@ -1,2 +1,10 @@
-<h1>Foods#new</h1>
-<p>Find me in app/views/foods/show.html.erb</p>
+<h1>Foods#show</h1>
+<section class = "">
+<div class="">
+  <h2>Food Information</h2>
+  <p>Food Name: <strong><%= @food.name%></strong></p>
+  <p>Measurment Unit: <strong><%=  @food.measurement_unit%></strong></p>
+  <p>Quantity: <strong><%= @food.price%></strong></p>
+  <p>Unit Price: <strong><%= @food.quantity%></strong></p>
+</div>
+</section>
