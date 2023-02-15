@@ -19,7 +19,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_14_215020) do
     t.string "name"
     t.string "measurement_unit"
     t.string "price"
-    t.integer "qulity"
+    t.integer "quantity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_foods_on_user_id"
