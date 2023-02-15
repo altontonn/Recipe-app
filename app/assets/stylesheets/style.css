@@ -26,7 +26,7 @@ section h1 {
 
 .button {
   border: none;
-  background-color: #0099ff;
+  background-color: #09f;
   padding: 10px 12px;
   border-radius: 16px;
 }
@@ -39,9 +39,10 @@ section h1 {
 .container {
   display: flex;
 }
+
 .delete {
   color: #fff;
-  background-color: #DC3545;
+  background-color: #dc3545;
   padding: 10px 12px;
   border-radius: 1rem;
   text-decoration: none;
