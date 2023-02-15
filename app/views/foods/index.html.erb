@@ -1,2 +1,25 @@
-<h1>Foods#create</h1>
-<p>Find me in app/views/foods/index.html.erb</p>
+<h1>Foods#index</h1>
+<section class=''>
+  <h1>Foods</h1>
+  <div class="">
+  <% if @foods.count > 0%>
+    <table class="">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Measurment Unit</th>
+          <th>Unit Price</th>
+          <th>Quantity</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @foods.each do |food| %>
+          <%= render food%>
+        <% end %>
+      </tbody>
+    <%else%>
+      <h2>No foods</h2>
+  <%end%>
+  </div>
+</section>
