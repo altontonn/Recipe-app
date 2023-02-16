@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   
   root to: 'foods#index'
   devise_for :users
+  # get 'general_shopping_list', to: 'general_shopping_list#shopping_list'
 
   resources :recipes, only: [:index, :create, :new, :show, :destroy] do
     resources :recipe_foods, only: [:index]

@@ -20,6 +20,7 @@ class RecipesController < ApplicationController
 
   def show
     @recipe
+    @recipe_foods = @recipe.recipe_foods.includes(:food)
   end
 
   def destroy
