@@ -7,4 +7,5 @@ class Recipe < ApplicationRecord
   validates :Description, presence: true
   validates :Preparation_time, presence: true
   validates :Cooking_time, presence: true
+  validates :Public, presence: true
 end

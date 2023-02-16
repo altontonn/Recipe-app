@@ -18,7 +18,9 @@ class RecipesController < ApplicationController
     end
   end
 
-  def show; end
+  def show
+    @recipe
+  end
 
   def destroy
     if @recipe.destroy
