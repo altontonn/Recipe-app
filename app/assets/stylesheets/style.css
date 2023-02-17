@@ -51,3 +51,19 @@ section h1 {
 .delete:hover {
   color: white;
 }
+
+.box {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.box1 {
+  width: 50%;
+}
+
+.box2 {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
