@@ -13,5 +13,4 @@ first_recipe = Recipe.create(name: 'Ralph', preparation_time: "one hour", cookin
 
 
 first_food = Food.create(name: 'Beans', measurement_unit: 'a', price: 'two hundred', qulity: 2)
-
 first_Food_Recipe = Food_Recipe.create(qulity: 2)
