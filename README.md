@@ -68,7 +68,7 @@ https://github.com/altontonn/Recipe-app.git
   cd my-folder
   
 ```
-blogsapp
+recipe-app
 
 ### Istall
 install this project with:
