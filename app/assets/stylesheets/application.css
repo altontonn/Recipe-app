@@ -1,0 +1,61 @@
+/*
+   * This is a manifest file that'll be compiled into application.css, which will include all the files
+   * listed below.
+   *
+   * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+   * vendor/assets/stylesheets directory can be referenced here using a relative path.
+   *
+   * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+   * compiled file so the styles you add here take precedence over styles defined in any other CSS
+   * files in this directory. Styles in this file should be added after the last require_* statement.
+   * It is generally better to create a new file per style scope.
+   *
+   *= require_tree .
+   *= require_self
+   */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: url(nice-restaurant-background-illustrated_52683-60539.avif); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  min-height: 100vh;
+  opacity: 0.9;
+}
+
+.notice {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  /* margin: 2rem; */
+}
+
+.food-table {
+  font-size: 38px;
+  font-weight: 700;
+  color: #03045e;
+}
+
+.Add-food {
+  text-decoration: none;
+  list-style: none;
+}
+
+.table-item {
+  font-size: 18px;
+  font-weight: 700;
+  color: #370617;
+}
+
+.t-item {
+  font-size: 15px;
+  font-weight: 500;
+  color: #080708;
+}
