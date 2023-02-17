@@ -1,7 +1,9 @@
 class RecipesController < ApplicationController
-  before_action :set_recipe, only: %i[show destroy]
+  load_and_authorize_resource
+
+  # before_action :set_recipe, only: %i[show destroy]
   def index
-    @recipes = current_user.recipes
+    @recipes = Recipe.includes(:user).where(user_id: current_user.id)
   end
 
   def new
@@ -18,22 +20,23 @@ class RecipesController < ApplicationController
     end
   end
 
-  def show; end
+  def show
+    @foods = Food.all
+    @recipe = Recipe.find(params[:id])
+   end
 
   def destroy
+    @recipe = Recipe.find(params[:id])
     if @recipe.destroy
-      flash[:success] = 'Recipe was successfully deleted.'
+      redirect_to recipes_path
     else
-      flash[:error] = 'Recipe could not be deletd.'
+      render 'new'
     end
-    redirect_to request.referrer
   end
+
+  private
 
   def recipe_params
-    params.require(:recipe).permit(:Name, :Preparation_time, :Cooking_time, :Description, :Public, :user_id)
-  end
-
-  def set_recipe
-    @recipe = Recipe.find(params[:id])
+    params.require(:recipe).permit(:name, :preparation_time, :cooking_time, :description, :public)
   end
 end
