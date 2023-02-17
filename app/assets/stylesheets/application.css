@@ -12,7 +12,7 @@
    *= require_tree .
    *= require_self
    */
-   
+
 * {
   padding: 0;
   margin: 0;
@@ -32,53 +32,6 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-
-  /* margin: 2rem; */
-}
-
-.food-table {
-  font-size: 38px;
-  font-weight: 700;
-  color: #03045e;
-}
-
-.Add-food {
-  text-decoration: none;
-  list-style: none;
-}
-
-.table-item {
-  font-size: 18px;
-  font-weight: 700;
-  color: #370617;
-}
-
-.t-item {
-  font-size: 15px;
-  font-weight: 500;
-  color: #080708;
-}
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  /* background-image: url(nice-restaurant-background-illustrated_52683-60539.avif); */
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  min-height: 100vh;
-  opacity: 0.9;
-}
-
-.notice {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-
-  /* margin: 2rem; */
 }
 
 .food-table {
