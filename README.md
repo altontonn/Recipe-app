@@ -68,7 +68,7 @@ https://github.com/altontonn/Recipe-app.git
   cd my-folder
   
 ```
-recipe-app
+blogsapp
 
 ### Istall
 install this project with:
@@ -103,9 +103,9 @@ To run the project, run `ruby <filename>` in your terminal
 
 👤 **Newton Alumasa**
 
-- Github: [altontonn](https://github.com/altontonn/)
-- Twitter: [AlumasaNewton](https://twitter.com/AlumasaNewton)
-- Linkedin: [newton-alumasa](https://www.linkedin.com/in/newton-alumasa/)
+- [Github](https://github.com/altontonn/)
+- [Twitter](https://twitter.com/AlumasaNewton)
+- [Linkedin](https://www.linkedin.com/in/newton-alumasa/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
