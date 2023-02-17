@@ -11,7 +11,6 @@
           <th class="table-item">Quantity</th>
           <th class="table-item">Actions</th>
         </tr>
-        <%= link_to "Details", recipe_details_path(id: recipe.id), method: :get %>
       </thead>
       <tbody>
         <% @foods.each do |food| %>
