@@ -3,9 +3,9 @@ class Recipe < ApplicationRecord
 
   has_many :recipe_foods, foreign_key: :recipe_id
 
-  validates :Name, presence: true
-  validates :Description, presence: true
-  validates :Preparation_time, presence: true
-  validates :Cooking_time, presence: true
-  validates :Public, presence: true
+  validates :name, presence: true
+  validates :description, presence: true
+  validates :preparation_time, presence: true
+  validates :cooking_time, presence: true
+  validates :public, presence: true
 end

@@ -14,11 +14,11 @@
       </tr>
       <% @recipes.each do |recipe| %>
       <tr>
-        <td><%= recipe.Name %></td>
-        <td><%= recipe.Preparation_time %></td>
-        <td><%= recipe.Cooking_time %></td>
-        <td><%= recipe.Description %></td>
-        <td><%= recipe.Public %></td>
+        <td><%= recipe.name %></td>
+        <td><%= recipe.preparation_time %></td>
+        <td><%= recipe.cooking_time %></td>
+        <td><%= recipe.description %></td>
+        <td><%= recipe.public %></td>
         <td><%= link_to "Delete", recipe_path(recipe), class: "delete",data: { turbo_method: :delete, turbo_confirm: "Are you  sure?"}%>
         </td>
       </tr>
