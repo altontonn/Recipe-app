@@ -10,9 +10,9 @@
     <p>Public: <strong><%= @recipe.Public%></strong></p>
   </div>
 </div>
-   <% if can? :read, @recipe %>
+   <% if can? :manage, @recipe %>
      <div class="recipe-details-btn-wrapper flex">
-       <%= link_to "Generate shopping list", general_shopping_list_path(@user, @recipe), class: 'details-btn'%>
+       <%# <%= link_to "Generate shopping list", general_shopping_list_path(@user, @recipe), class: 'details-btn'%> %>
        <%# <%= link_to "Add Ingredient", new_recipe_recipe_food_path(@recipe), class: 'details-btn'%>
     </div>
    <% end %>
