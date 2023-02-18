@@ -1,3 +1,7 @@
+# frozen_string_literal: true
+
+require_relative '../config/application'
+require 'importmap/commands'
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
