@@ -7,6 +7,4 @@ class Recipe < ApplicationRecord
   validates :preparation_time, presence: true
   validates :cooking_time, presence: true
   validates :public, presence: true
-
-  has many :recipe_foods, foreign_key: :user_id
 end
