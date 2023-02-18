@@ -1,7 +1,7 @@
 class RecipesController < ApplicationController
   load_and_authorize_resource
 
-   #before_action :set_recipe, only: %i[show destroy]
+  # before_action :set_recipe, only: %i[show destroy]
   def index
     @recipes = Recipe.includes(:user).where(user_id: current_user.id)
   end
