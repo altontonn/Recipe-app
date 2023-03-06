@@ -20,12 +20,12 @@
 }
 
 body {
-  /* background-image: url(nice-restaurant-background-illustrated_52683-60539.avif); */
+  background: linear-gradient(rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.73)), url(nice-restaurant-background-illustrated_52683-60539.avif);
   background-size: cover;
-  background-repeat: no-repeat;
   color: #fff;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   min-height: 100vh;
-  opacity: 0.9;
 }
 
 .notice {
