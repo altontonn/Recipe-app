@@ -1,5 +1,5 @@
 <div class="form-box">
-  <h2>Log in</h2>
+  <i class="icon ion-ios-locked-outline"></i>
   <%= form_for(resource, as: resource_name, url: session_path(resource_name), data: {turbo: false }) do |f| %>
     <div class="field">
       <%= f.label :email, class: "text-white mb-2 fw-bolder" %><br />
@@ -19,5 +19,7 @@
       <%= f.submit "Log in", class:"btn btn-primary" %>
     </div>
   <% end %>
-  <%= render "devise/shared/links" %>
+  <div class="form-link">
+    <%= render "devise/shared/links" %>
+  </div>
 </div>

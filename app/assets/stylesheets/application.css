@@ -20,7 +20,7 @@
 }
 
 body {
-  background: linear-gradient(rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.73)), url(nice-restaurant-background-illustrated_52683-60539.avif);
+  background: linear-gradient(rgba(220, 223, 241, 0.52), rgba(0, 0, 0, 0.73)), url(nice-restaurant-background-illustrated_52683-60539.avif);
   background-size: cover;
   color: #fff;
   background-repeat: no-repeat;
@@ -55,4 +55,23 @@ body {
   font-size: 15px;
   font-weight: 500;
   color: #080708;
+}
+
+.form-box {
+  border: 1px solid #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  background-color: rgba(230, 189, 189, 0.73);
+}
+
+.icon {
+  font-size: 4.5rem;
+  color: #2980ef;
+  display: flex;
+  justify-content: center;
+}
+
+.form-link {
+  text-align: center;
+  font-weight: bolder;
 }
