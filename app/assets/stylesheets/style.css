@@ -1,23 +1,7 @@
 table {
   border-collapse: collapse;
-  width: 80%;
-  margin: 0 auto;
   font-family: cursive;
-}
-
-td,
-th {
-  border: 1px solid #000;
-  text-align: left;
-  padding: 8px;
-}
-
-td {
-  padding: 2rem;
-}
-
-tr:nth-child(even) {
-  background-color: #ddd;
+  font-size: 1.2rem;
 }
 
 section h1 {
@@ -49,8 +33,8 @@ section h1 {
 .delete {
   color: #fff;
   background-color: #dc3545;
-  padding: 10px 12px;
-  border-radius: 1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
   text-decoration: none;
 }
 
@@ -72,4 +56,17 @@ section h1 {
   width: 50%;
   display: flex;
   justify-content: flex-end;
+}
+
+.foodIndex {
+  width: 80%;
+  color: #fff;
+  font-size: 1.2rem;
+  background-color: rgba(230, 189, 189, 0.73);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.foodForm {
+  width: 40%;
 }

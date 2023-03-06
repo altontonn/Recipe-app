@@ -1,24 +1,25 @@
-<section class=''>
-<h1 class="food-table mt-5">Foods</h1>
-<div class="Add-food"><%= link_to "Add food", new_food_path, class:"button"%>
-<% if @foods.count > 0%>
-   <table class="table table-bordered border-primary" >
-      <thead>
-      <tr>
-         <th class="table-item" >Name</th>
-         <th class="table-item">Measurment Unit</th>
-         <th class="table-item">Unit Price</th>
-         <th class="table-item">Quantity</th>
-         <th class="table-item">Actions</th>
-      </tr>
-      </thead>
-      <tbody>
-      <% @foods.each do |food| %>
-         <%= render food %>
-      <% end %>
-      </tbody>
-   <%else%>
-      <h2>No foods</h2>
-<%end%>
-</div>
-</section>
+<section class='foodIndex'>
+  <h1 class="food-table mt-5">Foods</h1>
+  <div class="Add-food"><%= link_to "Add food", new_food_path, class:"btn btn-primary my-2"%>
+    <% if @foods.count > 0%>
+      <table class="table border-primary" >
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Measurment Unit</th>
+            <th scope="col">Unit Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @foods.each do |food| %>
+            <%= render food %>
+          <% end %>
+        </tbody>
+      <%else%>
+        <h2>No foods</h2>
+      <%end%>
+    </div>
+  </section>

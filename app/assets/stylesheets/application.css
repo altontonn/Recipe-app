@@ -52,13 +52,12 @@ body {
 }
 
 .t-item {
-  font-size: 15px;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #080708;
 }
 
 .form-box {
-  border: 1px solid #fff;
   padding: 2rem;
   border-radius: 5px;
   background-color: rgba(230, 189, 189, 0.73);
