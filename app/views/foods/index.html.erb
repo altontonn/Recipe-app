@@ -2,24 +2,27 @@
   <h1 class="food-table mt-5">Foods</h1>
   <div class="Add-food"><%= link_to "Add food", new_food_path, class:"btn btn-primary my-2"%>
     <% if @foods.count > 0%>
-      <table class="table border-primary" >
-        <thead>
-          <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Name</th>
-            <th scope="col">Measurment Unit</th>
-            <th scope="col">Unit Price</th>
-            <th scope="col">Quantity</th>
-            <th scope="col">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% @foods.each do |food| %>
-            <%= render food %>
-          <% end %>
-        </tbody>
-      <%else%>
-        <h2>No foods</h2>
-      <%end%>
-    </div>
-  </section>
+      <div class="table-responsive">
+        <table class="table border-primary" >
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Measurment Unit</th>
+              <th scope="col">Unit Price</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @foods.each do |food| %>
+              <%= render food %>
+            <% end %>
+          </tbody>
+        <%else%>
+          <h2>No foods</h2>
+        </table>
+      </div>
+    <%end%>
+  </div>
+</section>

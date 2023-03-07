@@ -1,30 +1,34 @@
 <section class='recipe'>
-   <h1>Recipes List</h1>
-   <div class="container">
-      <button class="button"><%= link_to "Add Recipe", new_recipe_path%></button>
-   </div>
-   <% if @recipes.count > 0%>
-      <table>
-         <tr>
-         <th>Name</th>
-         <th>Preparation_time</th>
-         <th>Cooking_time</th>
-         <th>Description</th>
-         <th>Public</th>
-         </tr>
-         <% @recipes.each do |recipe| %>
-         <tr>
-         <td><%= recipe.name %></td>
-         <td><%= recipe.preparation_time %></td>
-         <td><%= recipe.cooking_time %></td>
-         <td><%= recipe.description %></td>
-         <td><%= recipe.public %></td>
-         <td><%= link_to "Delete", recipe_path(recipe), class: "delete",data: { turbo_method: :delete, turbo_confirm: "Are you  sure?"}%>
-         </td>
-         </tr>
-         <% end %>
-      <%else%>
+  <h1 class="food-table mt-5">Recipes List</h1>
+  <div class="container">
+    <%= link_to "Add Recipe", new_recipe_path, class: "btn btn-primary" %>
+  </div>
+  <% if @recipes.count > 0%>
+  <div class="table-responsive">
+    <table class="table border-primary">
+      <tr>
+        <th scope="row">ID</th>
+        <th scope="row">Name</th>
+        <th scope="row">Preparation_time</th>
+        <th scope="row">Cooking_time</th>
+        <th scope="row">Description</th>
+        <th scope="row">Public</th>
+      </tr>
+      <% @recipes.each do |recipe| %>
+        <tr>
+          <th scope="row"><%= recipe.id %></th>
+          <td class="t-item"><%= recipe.name %></td>
+          <td class="t-item"><%= recipe.preparation_time %></td>
+          <td class="t-item"><%= recipe.cooking_time %></td>
+          <td class="t-item"><%= recipe.description %></td>
+          <td class="t-item"><%= recipe.public %></td>
+          <td class="t-item"><%= link_to "Delete", recipe_path(recipe), class: "btn btn-danger",data: { turbo_method: :delete, turbo_confirm: "Are you  sure?"}%>
+          </td>
+        </tr>
+      <% end %>
+    <%else%>
       <h2>No recipe</h2>
-   <%end%>
-   </div>
+    <%end%>
+    </table>
+  </div>
 </section>
