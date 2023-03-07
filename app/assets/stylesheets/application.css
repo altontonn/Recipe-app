@@ -57,10 +57,10 @@ body {
   color: #080708;
 }
 
-.form-box {
+.form-box, .recipeForm {
   padding: 2rem;
   border-radius: 5px;
-  background-color: rgba(230, 189, 189, 0.73);
+  background-color: rgba(248, 213, 213, 0.73);
 }
 
 .icon {

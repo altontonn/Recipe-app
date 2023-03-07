@@ -41,6 +41,29 @@ section h1 {
   padding: 1rem;
 }
 
+.publicRecipe {
+  width: 60vw;
+  color: #fff;
+  font-size: 1.2rem;
+  background-color: rgba(248, 213, 213, 0.73);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
 .foodForm {
   width: 40%;
+}
+
+.card-body {
+  background-color: #AA89C4;
+}
+
+.card-title {
+  color: #03045e;
+}
+
+.publicBox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }

@@ -1,21 +1,21 @@
 <div class="form-box">
-  <h1 class="text-primary">Add new food</h1>
+  <h1 class="food-table mt-5">Add new food</h1>
   <%= form_with(model: food, html: { class: "" }) do |form| %>
     <%= render "shared/error_form_message", resource: food %>
     <div class="field">
-      <%= form.label "Food name", style: "display: block", class: "text-white mb-2 fw-bolder" %>
+      <%= form.label "Food name", style: "display: block; color: #03045e", class: "mb-2 fw-bolder" %>
       <%= form.text_field :name, required: true, class: "form-control" %>
     </div>
     <div class="field">
-      <%= form.label "Measurment Unit(g, kg, l, ml)", style: "display: block", class: "text-white mb-2 fw-bolder" %>
+      <%= form.label "Measurment Unit(g, kg, l, ml)", style: "display: block; color: #03045e", class: "mb-2 fw-bolder" %>
       <%= form.text_field :measurement_unit, required: true, class: "form-control" %>
     </div>
     <div class="field">
-      <%= form.label "Unit price", style: "display: block", class: "text-white mb-2 fw-bolder" %>
+      <%= form.label "Unit price", style: "display: block; color: #03045e", class: "mb-2 fw-bolder" %>
       <%= form.text_field :price, required: true, class: "form-control" %>
     </div>
     <div class="field">
-      <%= form.label "quantity", style: "display: block", class: "text-white mb-2 fw-bolder" %>
+      <%= form.label "quantity", style: "display: block; color: #03045e", class: "mb-2 fw-bolder" %>
       <%= form.number_field :quantity, required: true, class: "form-control" %>
     </div>
     <%= form.submit "Create Food", class: "mt-4 btn btn-primary"%>
