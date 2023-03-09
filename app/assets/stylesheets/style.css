@@ -32,7 +32,7 @@ section h1 {
   justify-content: flex-end;
 }
 
-.foodIndex, .recipe {
+.foodIndex, .recipe, .generalIndex {
   width: 80vw;
   color: #fff;
   font-size: 1.2rem;
@@ -66,4 +66,8 @@ section h1 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.generalP {
+  color: #03045e;
 }

@@ -1,24 +1,27 @@
-<section class='general_shopping_list flex_column'>
-<h1>Shopping List</h1>
-<% if @foods.length == 0 %>
-   <h2>There are no missing ingredients that must be purchased</h2>
-<% else %>
-   <div>
-      <h2>Amount of ingredients need to buy: <%= @missing_ingredients.length %></h2>
-      <h2>Total value of foods neded: <%= @total_price %> $</h2>
-   </div>
-   <table class="table">
-      <thead>
-      <tr>
-         <th>Food</th>
-         <th>Quantity</th>
-         <th>Value</th>
-      </tr>
-      </thead>
-      <tbody>
-      <% @missing_ingredients.each do |ingredient| %>
-         <%= render 'show', ingredient: ingredient %>
-      <% end %>
-      </tbody>
-<% end %>
+<section class='generalIndex'>
+  <h1 class="food-table mt-5">Shopping List</h1>
+  <% if @foods.length == 0 %>
+    <p class="generalP text-center">There are no missing ingredients that must be purchased</p>
+  <% else %>
+    <div>
+      <p class="generalP text-center">Amount of ingredients need to buy: <%= @missing_ingredients.length %></p>
+      <p class="generalP text-center">Total value of foods neded: <%= @total_price %> $</p>
+    </div>
+    <div class="table-responsive">
+      <table class="table border-primary">
+        <thead>
+          <tr>
+            <th scope="col">Food</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @missing_ingredients.each do |ingredient| %>
+            <%= render 'show', ingredient: ingredient %>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  <% end %>
 </section>
