@@ -71,3 +71,16 @@ section h1 {
 .generalP {
   color: #03045e;
 }
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.navbar {
+  background-color: rgba(248, 144, 144, 0.73);
+}
+
+.nav-link {
+  color: #03045e !important;
+  font-weight: bolder;
+}
