@@ -1,4 +1,5 @@
 <div class="form-box">
+  <%= link_to "< Back", foods_path, class:"btn btn-primary" %>
   <h1 class="food-table mt-5">Add new food</h1>
   <%= form_with(model: food, html: { class: "" }) do |form| %>
     <%= render "shared/error_form_message", resource: food %>
