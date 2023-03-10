@@ -2,13 +2,14 @@ class RecipeFoodsController < ApplicationController
   def new
     @recipe_food = RecipeFood.new
     @current_user = current_user
+    @recipe = Recipe.find(params[:recipe_id])
   end
 
   def create
     @recipe_food = RecipeFood.new(recipe_food_params)
     @recipe_food.recipe_id = Recipe.find(params[:recipe_id]).id
     if @recipe_food.save
-      redirect_to recipe_path(params[:recipe_id]), notice: 'Food was successfully created.'
+      redirect_to recipe_path(params[:recipe_id]), notice: 'Food was successfully created.', class: "text-primary"
     else
       render :new, status: :unprocessable_entity
     end
