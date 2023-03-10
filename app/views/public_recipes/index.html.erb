@@ -5,7 +5,7 @@
   <% else %>
     <div class="publicBox">
       <%@recipes.each do |recipe|%>
-        <article class="card" style="width: 20rem">
+        <article class="card mb-4" style="width: 20rem">
           <div class="card-body">
             <div class="card-header">
               <%=link_to recipe_path(id: recipe.id), class: "text-decoration-none" do%>
