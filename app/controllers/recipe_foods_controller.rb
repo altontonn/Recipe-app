@@ -9,7 +9,7 @@ class RecipeFoodsController < ApplicationController
     @recipe_food = RecipeFood.new(recipe_food_params)
     @recipe_food.recipe_id = Recipe.find(params[:recipe_id]).id
     if @recipe_food.save
-      redirect_to recipe_path(params[:recipe_id]), notice: 'Food was successfully created.', class: "text-primary"
+      redirect_to recipe_path(params[:recipe_id]), notice: "Food was successfully created.", class: "text-primary"
     else
       render :new, status: :unprocessable_entity
     end
@@ -30,7 +30,7 @@ class RecipeFoodsController < ApplicationController
   def update
     @recipe_food = RecipeFood.find(params[:id])
     if @recipe_food.update(recipe_food_params)
-      redirect_to recipe_path(@recipe_food.recipe_id), notice: 'Food was successfully updated.'
+      redirect_to recipe_path(@recipe_food.recipe_id), notice: "Food was successfully updated."
     else
       render :edit, status: :unprocessable_entity
     end
