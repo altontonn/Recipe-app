@@ -68,7 +68,21 @@ section h1 {
 }
 
 .foodForm {
-  width: 40%;
+  width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+  .foodForm, .recipeShow, .recipeNew, .form-box {
+    width: 90%;
+  }
+
+  .recipe_buttons {
+    display: flex;
+  }
+
+  .recipe_buttons .btn {
+    font-size: 15px;
+  }
 }
 
 .card-body {

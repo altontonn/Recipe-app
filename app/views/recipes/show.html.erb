@@ -17,17 +17,19 @@
       <%=link_to "Add ingredient", new_recipe_recipe_food_path(@recipe), class: "btn btn-primary" %>
     <%end%>
   </div>
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Food</th>
-        <th>Quantity</th>
-        <th>Value</th>
-        <th>Actions</th>
-      </tr>
-    </thead>
-    <tbody>
-      <%= render 'ingredient'%>
-    </tbody>
-  </table>
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Food</th>
+          <th>Quantity</th>
+          <th>Value</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%= render 'ingredient'%>
+      </tbody>
+    </table>
+  </div>
 </section>
