@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :recipes, only: [:index, :create, :new, :show, :destroy] do
-    resources :recipe_foods, only: [:index, :new, :create, :edit, :update]
+    resources :recipe_foods, only: [:index, :new, :create, :edit, :update, :destroy]
   end
   resources :foods, only: [:index, :show, :new, :create, :destroy]
   resources :public_recipes, only: [:index]
