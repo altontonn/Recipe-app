@@ -7,13 +7,19 @@ default: &default
 
 development:
   <<: *default
+  encoding: unicode
   database: recipe_app_development
+  pool: 5
+  host: localhost
   username: newton
   password: 12345
 
 test:
   <<: *default
+  adapter: postgresql
+  encoding: unicode
   database: recipe_app_test
+  pool: 5
   username: newton
   password: 12345
 
