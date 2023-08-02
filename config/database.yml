@@ -13,6 +13,7 @@ development:
   host: localhost
   username: newton
   password: 12345
+  port: 5432
 
 test:
   <<: *default
